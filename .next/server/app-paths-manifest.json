@@ -1,7 +1,5 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js",
-  "/subscription/page": "app/subscription/page.js",
-  "/terms-of-service/page": "app/terms-of-service/page.js"
+  "/subscription/page": "app/subscription/page.js"
 }

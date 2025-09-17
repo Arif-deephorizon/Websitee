@@ -1,15 +1,17 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { LuShieldCheck, LuUsers, LuCheck, LuStar, LuArrowRight, LuHeart, LuZap, LuGlobe, LuLock, LuSmartphone, LuHeadphones, LuMapPin } from "react-icons/lu";
+import { LuShieldCheck, LuUsers, LuUser, LuCheck, LuStar, LuArrowRight, LuHeart, LuZap, LuGlobe, LuLock, LuSmartphone, LuHeadphones, LuMapPin } from "react-icons/lu";
 import Link from "next/link";
 
 export default function SubscriptionPage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [selectedPlan, setSelectedPlan] = useState('family');
+  const [selectedPlan, setSelectedPlan] = useState('family-monthly');
   const [isAnnual, setIsAnnual] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const mobileNavRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
@@ -20,34 +22,88 @@ export default function SubscriptionPage() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  useEffect(() => {
+    if (!mobileNavOpen) return;
+    function handleClick(e: MouseEvent) {
+      if (mobileNavRef.current && e.target instanceof Node && !mobileNavRef.current.contains(e.target)) {
+        setMobileNavOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [mobileNavOpen]);
 
   const plans = [
     {
-      id: 'family',
+      id: 'individual-monthly',
+      name: 'Individual Plan',
+      price: 149,
+      period: 'month',
+      originalPrice: null,
+      savings: null,
+      description: 'Personal safety for individuals',
+      features: [
+        'Personal safety tracking',
+        'Emergency alerts',
+        '5 video monitoring sessions',
+        'Location sharing',
+        '24/7 security monitoring'
+      ],
+      icon: LuUser
+    },
+    {
+      id: 'individual-yearly',
+      name: 'Individual Plan',
+      price: 1639,
+      period: 'year',
+      originalPrice: 1788,
+      savings: '₹149 (2 months free)',
+      description: 'Personal safety for individuals',
+      features: [
+        'Personal safety tracking',
+        'Emergency alerts',
+        '5 video monitoring sessions',
+        'Location sharing',
+        '24/7 security monitoring',
+        '2 months free'
+      ],
+      icon: LuUser
+    },
+    {
+      id: 'family-monthly',
       name: 'Family Plan',
-      price: isAnnual ? 6490 : 649,
-      period: isAnnual ? 'year' : 'month',
-      originalPrice: isAnnual ? 7788 : null,
-      savings: isAnnual ? '17%' : null,
+      price: 649,
+      period: 'month',
+      originalPrice: null,
+      savings: null,
       description: 'Complete protection for your entire family',
       features: [
-        'Up to 6 family members',
-        '24/7 live agent response',
-        'GPS tracking for all members',
-        'Emergency dispatch orchestration',
-        'Custom safety schedules',
-        'Silent alarm activation',
-        'HD video monitoring',
-        'Encrypted data protection',
-        'Multi-device support',
-        'Priority customer support',
-        'Family safety dashboard',
-        'Location sharing between members'
+        'Up to 5 family members',
+        'Family safety tracking',
+        'Emergency alerts',
+        '5 video monitoring sessions',
+        'Location sharing',
+        '24/7 security monitoring'
       ],
-      popular: true,
+      icon: LuUsers
+    },
+    {
+      id: 'family-yearly',
+      name: 'Family Plan',
+      price: 7139,
+      period: 'year',
+      originalPrice: 7788,
+      savings: '₹1,298 (2 months free)',
+      description: 'Complete protection for your entire family',
+      features: [
+        'Up to 5 family members',
+        'Family safety tracking',
+        'Emergency alerts',
+        '5 video monitoring sessions',
+        'Location sharing',
+        '24/7 security monitoring',
+        '2 months free'
+      ],
       icon: LuUsers
     }
   ];
@@ -120,29 +176,48 @@ export default function SubscriptionPage() {
             <img src="/images/logotransparent.png" alt="Deep Horizon Logo" className="h-9 w-auto mr-2" />
             <span>Deep </span><span className={isDarkMode ? 'text-blue-400 hover:text-blue-500' : 'text-blue-600 hover:text-blue-500'}>Horizon</span>
           </Link>
-          <div className="flex items-center gap-4">
-            <button
-              onClick={toggleTheme}
-              className={`p-2 rounded-xl transition-all duration-300 ${
-                isDarkMode ? 'hover:bg-white/10' : 'hover:bg-black/10'
-              }`}
-            >
-              {isDarkMode ? '🌙' : '☀️'}
-            </button>
-            <Link
-              href="/"
-              className={`px-4 py-2 rounded-xl transition-all duration-300 ${
-                isDarkMode
-                  ? 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 hover:text-blue-300'
-                  : 'bg-blue-600/20 hover:bg-blue-600/30 text-blue-600 hover:text-blue-700'
-              }`}
-            >
-              Back to Home
-            </Link>
+          {/* Desktop nav links */}
+          <div className="hidden md:flex gap-8 text-base font-medium">
+            <Link href="/" className={`transition-all duration-300 px-3 py-1 rounded-xl hover:text-blue-500 focus:outline-none hover:shadow-md ${isDarkMode ? 'hover:bg-blue-400/5 hover:shadow-blue-400/15' : 'hover:bg-blue-100/30 hover:shadow-blue-400/15'}`}>Home</Link>
+            <Link href="/#four-pillars-section" className={`transition-all duration-300 px-3 py-1 rounded-xl hover:text-blue-500 focus:outline-none hover:shadow-md ${isDarkMode ? 'hover:bg-blue-400/5 hover:shadow-blue-400/15' : 'hover:bg-blue-100/30 hover:shadow-blue-400/15'}`}>Features</Link>
+            <Link href="/#for-everyone-section" className={`transition-all duration-300 px-3 py-1 rounded-xl hover:text-blue-500 focus:outline-none hover:shadow-md ${isDarkMode ? 'hover:bg-blue-400/5 hover:shadow-blue-400/15' : 'hover:bg-blue-100/30 hover:shadow-blue-400/15'}`}>For Everyone</Link>
+            <Link href="/subscription" className={`transition-all duration-300 px-3 py-1 rounded-xl hover:text-blue-500 focus:outline-none hover:shadow-md ${isDarkMode ? 'hover:bg-blue-400/5 hover:shadow-blue-400/15' : 'hover:bg-blue-100/30 hover:shadow-blue-400/15'}`}>Pricing</Link>
+            <Link href="/#contact-section" className={`transition-all duration-300 px-3 py-1 rounded-xl hover:text-blue-500 focus:outline-none hover:shadow-md ${isDarkMode ? 'hover:bg-blue-400/5 hover:shadow-blue-400/15' : 'hover:bg-blue-100/30 hover:shadow-blue-400/15'}`}>Contact</Link>
           </div>
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2 rounded-xl transition-all duration-300 focus:outline-none"
+            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            <div className={`w-6 h-0.5 transition-all duration-300 ${isDarkMode ? 'bg-white' : 'bg-gray-900'} ${mobileNavOpen ? 'rotate-45 translate-y-1' : ''}`}></div>
+            <div className={`w-6 h-0.5 my-1 transition-all duration-300 ${isDarkMode ? 'bg-white' : 'bg-gray-900'} ${mobileNavOpen ? 'opacity-0' : ''}`}></div>
+            <div className={`w-6 h-0.5 transition-all duration-300 ${isDarkMode ? 'bg-white' : 'bg-gray-900'} ${mobileNavOpen ? '-rotate-45 -translate-y-1' : ''}`}></div>
+          </button>
         </div>
       </nav>
       <div className="h-20" />
+
+      {/* Mobile Navigation Menu */}
+      {mobileNavOpen && (
+        <div
+          ref={mobileNavRef}
+          className={`fixed top-24 left-6 right-6 z-40 rounded-3xl backdrop-blur-xl border shadow-2xl transition-all duration-500 ${
+            isDarkMode
+              ? 'bg-white/5 border-blue-400/20 shadow-blue-900/40'
+              : 'bg-white/20 border-blue-600/10 shadow-blue-200/30'
+          }`}
+          style={{ WebkitBackdropFilter: 'blur(16px)', backdropFilter: 'blur(16px)' }}
+        >
+          <div className="p-6 space-y-4">
+            <Link href="/" onClick={() => setMobileNavOpen(false)} className={`block w-full text-left px-4 py-3 rounded-xl transition-all duration-300 ${isDarkMode ? 'hover:bg-white/10 text-white' : 'hover:bg-black/10 text-gray-900'}`}>Home</Link>
+            <Link href="/#four-pillars-section" onClick={() => setMobileNavOpen(false)} className={`block w-full text-left px-4 py-3 rounded-xl transition-all duration-300 ${isDarkMode ? 'hover:bg-white/10 text-white' : 'hover:bg-black/10 text-gray-900'}`}>Features</Link>
+            <Link href="/#for-everyone-section" onClick={() => setMobileNavOpen(false)} className={`block w-full text-left px-4 py-3 rounded-xl transition-all duration-300 ${isDarkMode ? 'hover:bg-white/10 text-white' : 'hover:bg-black/10 text-gray-900'}`}>For Everyone</Link>
+            <Link href="/subscription" onClick={() => setMobileNavOpen(false)} className={`block w-full text-left px-4 py-3 rounded-xl transition-all duration-300 ${isDarkMode ? 'hover:bg-white/10 text-white' : 'hover:bg-black/10 text-gray-900'}`}>Pricing</Link>
+            <Link href="/#contact-section" onClick={() => setMobileNavOpen(false)} className={`block w-full text-left px-4 py-3 rounded-xl transition-all duration-300 ${isDarkMode ? 'hover:bg-white/10 text-white' : 'hover:bg-black/10 text-gray-900'}`}>Contact</Link>
+          </div>
+        </div>
+      )}
 
       {/* Animated Background */}
       <div className={`fixed inset-0 transition-opacity duration-500 ${isDarkMode ? "opacity-30" : "opacity-20"}`}>
@@ -229,7 +304,7 @@ export default function SubscriptionPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="relative py-32 px-6">
+      <section className="relative z-10 py-32 px-6 mt-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-thin tracking-wider mb-8">
@@ -238,133 +313,107 @@ export default function SubscriptionPage() {
             <p className={`text-xl font-light max-w-2xl mx-auto ${
               isDarkMode ? "text-gray-300" : "text-gray-700"
             }`}>
-              Start with our most popular family plan and experience the future of personal security
+              Choose from individual or family plans. Start with our most popular family plan and experience the future of personal security
             </p>
-          </div>
-
-          {/* Billing Toggle */}
-          <div className="flex justify-center mb-12">
-            <div className={`flex items-center p-1 rounded-2xl backdrop-blur-xl border ${
-              isDarkMode
-                ? "bg-white/5 border-blue-400/20"
-                : "bg-white/20 border-blue-600/10"
-            }`}>
-              <button
-                onClick={() => setIsAnnual(false)}
-                className={`px-6 py-3 rounded-xl transition-all duration-300 font-medium ${
-                  !isAnnual
-                    ? `${isDarkMode ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-600/20 text-blue-600'}`
-                    : `${isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-600 hover:text-gray-700'}`
-                }`}
-              >
-                Monthly
-              </button>
-              <button
-                onClick={() => setIsAnnual(true)}
-                className={`px-6 py-3 rounded-xl transition-all duration-300 font-medium ${
-                  isAnnual
-                    ? `${isDarkMode ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-600/20 text-blue-600'}`
-                    : `${isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-600 hover:text-gray-700'}`
-                }`}
-              >
-                Annual
-                <span className={`ml-2 px-2 py-1 text-xs rounded-full ${
-                  isDarkMode ? 'bg-green-500/20 text-green-400' : 'bg-green-600/20 text-green-600'
-                }`}>
-                  Save 17%
-                </span>
-              </button>
+            <div className="text-sm text-gray-500 mt-4">
+              {plans.length} plans available
             </div>
           </div>
 
           {/* Plan Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
-            {plans.map((plan) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8">
+            {plans.map((plan, index) => (
               <div
                 key={plan.id}
-                className={`group relative p-8 rounded-3xl transition-all duration-500 cursor-pointer overflow-hidden backdrop-blur-xl border ${
-                  plan.popular
-                    ? isDarkMode
-                      ? "bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-cyan-500/10 border-blue-400/30 shadow-2xl shadow-blue-900/40"
-                      : "bg-gradient-to-br from-blue-400/10 via-purple-400/5 to-cyan-400/10 border-blue-600/20 shadow-2xl shadow-blue-200/30"
-                    : isDarkMode
-                      ? "bg-white/5 hover:bg-white/10 border-blue-400/20 shadow-2xl shadow-blue-900/40"
-                      : "bg-white/20 hover:bg-white/30 border-blue-600/10 shadow-2xl shadow-blue-200/30"
-                }`}
-              >
-                {plan.popular && (
-                  <div className={`absolute -top-4 left-1/2 transform -translate-x-1/2 px-6 py-2 rounded-full text-sm font-medium ${
-                    isDarkMode ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-600/20 text-blue-600'
-                  }`}>
-                    ⭐ Most Popular
-                  </div>
-                )}
-
-                <div className="text-center mb-8">
-                  <div className={`mb-4 transition-colors duration-300 flex items-center justify-center text-4xl ${
-                    isDarkMode ? "text-blue-400/70 group-hover:text-blue-400" : "text-blue-600/70 group-hover:text-blue-600"
-                  }`}>
-                    {plan.icon && <plan.icon size={48} />}
-                  </div>
-                  <h3 className="text-3xl font-light mb-2 tracking-wide">{plan.name}</h3>
-                  <p className={`font-light ${
-                    isDarkMode ? "text-gray-400" : "text-gray-600"
-                  }`}>
-                    {plan.description}
-                  </p>
-                </div>
-
-                <div className="text-center mb-8">
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    <span className="text-4xl font-light">₹</span>
-                    <span className="text-6xl font-thin">{plan.price}</span>
-                    <span className="text-xl font-light">/{plan.period}</span>
-                  </div>
-                  {plan.originalPrice && (
-                    <div className="flex items-center justify-center gap-2">
-                      <span className={`text-lg line-through ${
-                        isDarkMode ? "text-gray-500" : "text-gray-400"
-                      }`}>
-                        ₹{plan.originalPrice}
-                      </span>
-                      <span className={`px-2 py-1 text-sm rounded-full ${
-                        isDarkMode ? 'bg-green-500/20 text-green-400' : 'bg-green-600/20 text-green-600'
-                      }`}>
-                        Save {plan.savings}
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="mb-8">
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <div className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5 ${
-                          isDarkMode ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-600/20 text-blue-600'
-                        }`}>
-                          <LuCheck size={12} />
-                        </div>
-                        <span className={`font-light ${
-                          isDarkMode ? "text-gray-300" : "text-gray-700"
-                        }`}>
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <button className={`w-full py-4 px-6 rounded-2xl font-medium transition-all duration-300 group ${
+                className={`group relative flex flex-col h-full min-h-[600px] rounded-3xl transition-all duration-500 cursor-pointer overflow-hidden backdrop-blur-xl border ${
                   isDarkMode
-                    ? "bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 hover:text-blue-300 border border-blue-400/30"
-                    : "bg-blue-600/20 hover:bg-blue-600/30 text-blue-600 hover:text-blue-700 border border-blue-600/20"
-                }`}>
-                  <span className="flex items-center justify-center gap-2">
-                    Get Started
-                    <LuArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
-                  </span>
-                </button>
+                    ? "bg-white/5 hover:bg-white/10 border-blue-400/20 shadow-2xl shadow-blue-900/40"
+                    : "bg-white/20 hover:bg-white/30 border-blue-600/10 shadow-2xl shadow-blue-200/30"
+                }`}
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Card Content with centered layout */}
+                <div className="flex flex-col h-full p-8 justify-between">
+                  {/* Top Section - Header and Pricing */}
+                  <div className="flex flex-col items-center text-center">
+                    {/* Header */}
+                    <div className="mb-8">
+                      <div className={`mb-4 transition-colors duration-300 flex items-center justify-center text-4xl ${
+                        isDarkMode ? "text-blue-400/70 group-hover:text-blue-400" : "text-blue-600/70 group-hover:text-blue-600"
+                      }`}>
+                        {plan.icon && <plan.icon size={48} />}
+                      </div>
+                      <h3 className="text-2xl font-light mb-2 tracking-wide">{plan.name}</h3>
+                      <p className={`text-sm font-light ${
+                        isDarkMode ? "text-gray-400" : "text-gray-600"
+                      }`}>
+                        {plan.description}
+                      </p>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="mb-8">
+                      <div className="flex items-center justify-center gap-2 mb-2">
+                        <span className="text-3xl font-light">₹</span>
+                        <span className="text-5xl font-thin">{plan.price}</span>
+                        <span className="text-lg font-light">/{plan.period}</span>
+                      </div>
+                      {plan.period === 'year' && (
+                        <div className="text-sm text-gray-400 mb-2">
+                          ₹{Math.round(plan.price / 12)}/month
+                        </div>
+                      )}
+                      {plan.originalPrice && (
+                        <div className="flex items-center justify-center gap-2">
+                          <span className={`text-base line-through ${
+                            isDarkMode ? "text-gray-500" : "text-gray-400"
+                          }`}>
+                            ₹{plan.originalPrice}
+                          </span>
+                          <span className={`px-2 py-1 text-xs rounded-full ${
+                            isDarkMode ? 'bg-green-500/20 text-green-400' : 'bg-green-600/20 text-green-600'
+                          }`}>
+                            {plan.savings}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Middle Section - Features */}
+                  <div className="flex-1 flex items-center justify-center mb-8">
+                    <ul className="space-y-3 w-full">
+                      {plan.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start gap-3">
+                          <div className={`flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center mt-0.5 ${
+                            isDarkMode ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-600/20 text-blue-600'
+                          }`}>
+                            <LuCheck size={10} />
+                          </div>
+                          <span className={`text-sm font-light ${
+                            isDarkMode ? "text-gray-300" : "text-gray-700"
+                          }`}>
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Bottom Section - CTA Button */}
+                  <div className="w-full">
+                    <button className={`w-full py-3 px-6 rounded-2xl font-medium transition-all duration-300 group ${
+                      isDarkMode
+                        ? "bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 hover:text-blue-300 border border-blue-400/30"
+                        : "bg-blue-600/20 hover:bg-blue-600/30 text-blue-600 hover:text-blue-700 border border-blue-600/20"
+                    }`}>
+                      <span className="flex items-center justify-center gap-2">
+                        Get Started
+                        <LuArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -372,7 +421,7 @@ export default function SubscriptionPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className={`relative py-32 px-6 ${
+      <section className={`relative z-10 py-32 px-6 ${
         isDarkMode ? "bg-gray-900/20" : "bg-gray-100/50"
       }`}>
         <div className="max-w-6xl mx-auto">
@@ -420,7 +469,7 @@ export default function SubscriptionPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="relative py-32 px-6">
+      <section className="relative z-10 py-32 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-thin tracking-wider mb-8">
@@ -479,7 +528,7 @@ export default function SubscriptionPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 px-6">
+      <section className="relative z-10 py-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className={`p-12 rounded-3xl backdrop-blur-xl border border-white/20 shadow-2xl ${
             isDarkMode
@@ -501,7 +550,7 @@ export default function SubscriptionPage() {
                   : "bg-blue-600/20 hover:bg-blue-600/30 border-blue-600/20 text-blue-600 hover:text-blue-700"
               }`}>
                 <span className="flex items-center gap-2">
-                  Get Family Plan
+                  Get Started
                   <LuArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
               </button>
