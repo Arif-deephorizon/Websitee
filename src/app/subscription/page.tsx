@@ -242,69 +242,8 @@ export default function SubscriptionPage() {
         />
       </div>
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
-        <div className={`absolute inset-0 transition-all duration-500 ${
-          isDarkMode
-            ? "bg-gradient-to-br from-slate-900 via-blue-900/30 to-black"
-            : "bg-gradient-to-br from-blue-50 via-purple-100/60 to-gray-100"
-        }`} />
-        
-        <div className={`absolute inset-0 transition-opacity duration-500 ${isDarkMode ? "opacity-20" : "opacity-10"}`}>
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: isDarkMode ?
-                `linear-gradient(rgba(59, 130, 246, 0.2) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(59, 130, 246, 0.2) 1px, transparent 1px)` :
-                `linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)`,
-              backgroundSize: "50px 50px"
-            }}
-          />
-        </div>
-
-        <div className={`absolute inset-0 backdrop-blur-2xl transition-all duration-500 ${
-          isDarkMode ? "bg-black/30" : "bg-white/20"
-        }`} />
-
-        <div className={`relative z-10 text-center max-w-4xl transition-all duration-2000 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
-          <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-thin tracking-tighter mb-6 leading-none">
-              <span className={`block bg-gradient-to-r bg-clip-text text-transparent animate-pulse ${
-                isDarkMode
-                  ? "from-white via-blue-100 to-white"
-                  : "from-gray-900 via-blue-600 to-gray-900"
-              }`}>
-                PROTECT
-              </span>
-              <span className={`block text-5xl md:text-7xl font-extralight -mt-4 ${
-                isDarkMode ? "text-blue-400/80" : "text-blue-600/80"
-              }`}>
-                YOUR FAMILY
-              </span>
-            </h1>
-            <div className={`w-24 h-px bg-gradient-to-r from-transparent to-transparent mx-auto mb-8 animate-pulse ${
-              isDarkMode ? "via-blue-400" : "via-blue-600"
-            }`} />
-          </div>
-
-          <p className={`text-xl md:text-2xl font-light mb-12 leading-relaxed max-w-2xl mx-auto ${
-            isDarkMode ? "text-gray-300" : "text-gray-700"
-          }`}>
-            Choose the plan that keeps your loved ones safe.
-            <br />
-            <span className={isDarkMode ? "text-blue-400" : "text-blue-600"}>
-              Complete protection for the whole family.
-            </span>
-          </p>
-        </div>
-      </section>
-
       {/* Pricing Section */}
-      <section className="relative z-10 py-32 px-6 mt-16">
+      <section className="relative z-10 py-16 px-6 pt-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-thin tracking-wider mb-8">
@@ -315,14 +254,48 @@ export default function SubscriptionPage() {
             }`}>
               Choose from individual or family plans. Start with our most popular family plan and experience the future of personal security
             </p>
-            <div className="text-sm text-gray-500 mt-4">
-              {plans.length} plans available
+            
+            {/* Subscription Toggle */}
+            <div className="flex items-center justify-center gap-4 mt-12 mb-8">
+              <button
+                onClick={() => setIsAnnual(false)}
+                className={`relative px-6 py-3 rounded-2xl font-medium transition-all duration-300 ${
+                  !isAnnual
+                    ? isDarkMode
+                      ? "bg-blue-500/30 text-blue-400 border-2 border-blue-400/50"
+                      : "bg-blue-600/30 text-blue-600 border-2 border-blue-600/50"
+                    : isDarkMode
+                    ? "bg-white/5 text-gray-400 border-2 border-white/10 hover:bg-white/10"
+                    : "bg-white/20 text-gray-600 border-2 border-gray-300/30 hover:bg-white/30"
+                }`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setIsAnnual(true)}
+                className={`relative px-6 py-3 rounded-2xl font-medium transition-all duration-300 ${
+                  isAnnual
+                    ? isDarkMode
+                      ? "bg-blue-500/30 text-blue-400 border-2 border-blue-400/50"
+                      : "bg-blue-600/30 text-blue-600 border-2 border-blue-600/50"
+                    : isDarkMode
+                    ? "bg-white/5 text-gray-400 border-2 border-white/10 hover:bg-white/10"
+                    : "bg-white/20 text-gray-600 border-2 border-gray-300/30 hover:bg-white/30"
+                }`}
+              >
+                Yearly
+                <span className={`absolute -top-2 -right-2 px-2 py-0.5 text-xs font-bold rounded-full ${
+                  isDarkMode ? "bg-green-500 text-white" : "bg-green-600 text-white"
+                }`}>
+                  SAVE
+                </span>
+              </button>
             </div>
           </div>
 
           {/* Plan Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8">
-            {plans.map((plan, index) => (
+            {plans.filter(plan => plan.period === (isAnnual ? 'year' : 'month')).map((plan, index) => (
               <div
                 key={plan.id}
                 className={`group relative flex flex-col h-full min-h-[600px] rounded-3xl transition-all duration-500 cursor-pointer overflow-hidden backdrop-blur-xl border ${
