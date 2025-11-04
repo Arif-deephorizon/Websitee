@@ -672,6 +672,7 @@ export default function Page() {
               <div className="mt-3 flex gap-4">
                 <a href="/privacy-policy" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Privacy Policy</a>
                 <a href="/terms-of-service" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Terms of Service</a>
+                <a href="/refund-policy" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Refund Policy</a>
               </div>
             </div>
           </div>

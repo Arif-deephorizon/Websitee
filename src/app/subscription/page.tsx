@@ -57,7 +57,7 @@ export default function SubscriptionPage() {
       price: 1639,
       period: 'year',
       originalPrice: 1788,
-      savings: '₹149 (2 months free)',
+      savings: '₹149 (Save 8%)',
       description: 'Personal safety for individuals',
       features: [
         'Personal safety tracking',
@@ -65,7 +65,7 @@ export default function SubscriptionPage() {
         '5 video monitoring sessions',
         'Location sharing',
         '24/7 security monitoring',
-        '2 months free'
+        'Save 8%'
       ],
       icon: LuUser
     },
@@ -93,7 +93,7 @@ export default function SubscriptionPage() {
       price: 7139,
       period: 'year',
       originalPrice: 7788,
-      savings: '₹1,298 (2 months free)',
+      savings: '₹649 (Save 8%)',
       description: 'Complete protection for your entire family',
       features: [
         'Up to 5 family members',
@@ -102,7 +102,7 @@ export default function SubscriptionPage() {
         '5 video monitoring sessions',
         'Location sharing',
         '24/7 security monitoring',
-        '2 months free'
+        'Save 8%'
       ],
       icon: LuUsers
     }
@@ -287,7 +287,7 @@ export default function SubscriptionPage() {
                 <span className={`absolute -top-2 -right-2 px-2 py-0.5 text-xs font-bold rounded-full ${
                   isDarkMode ? "bg-green-500 text-white" : "bg-green-600 text-white"
                 }`}>
-                  SAVE
+                  8% OFF
                 </span>
               </button>
             </div>
@@ -567,6 +567,7 @@ export default function SubscriptionPage() {
               <div className="mt-3 flex gap-4">
                 <a href="/privacy-policy" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Privacy Policy</a>
                 <a href="/terms-of-service" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Terms of Service</a>
+                <a href="/refund-policy" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Refund Policy</a>
               </div>
             </div>
           </div>
