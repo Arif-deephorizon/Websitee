@@ -673,6 +673,7 @@ export default function Page() {
                 <a href="/privacy-policy" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Privacy Policy</a>
                 <a href="/terms-of-service" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Terms of Service</a>
                 <a href="/refund-policy" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Refund Policy</a>
+                <a href="/account-deletion" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>Account Deletion</a>
               </div>
             </div>
           </div>

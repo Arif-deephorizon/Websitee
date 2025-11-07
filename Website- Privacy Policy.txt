@@ -1,0 +1,110 @@
+
+
+Privacy Policy 
+Effective Date: 1
+st
+ November, 2025 
+Last Updated:  1
+st
+ November, 2025 
+This Privacy Policy describes how Deep Horizon Security Technologies Pvt. 
+Ltd. (“Company”, “we”, “our”, or “us”) collects, uses, stores, and protects the personal 
+information of users (“you” or “your”) who visit our website www.deephorizon.io and use 
+the Deep Horizon App or related digital services. 
+We are committed to safeguarding your privacy and ensuring transparency in how your data is 
+handled. 
+1. Information We Collect 
+We may collect the following types of information when you use our website, app, or services: 
+1.1. Personal Information 
+Information that can identify you, such as: 
+• Full name 
+• Mobile number and email address 
+• Location data (when using security or emergency features) 
+• Payment details (processed via secure third-party gateways) 
+• Device and app usage information 
+1.2. Non-Personal Information 
+Technical and analytical data that does not identify you directly, such as: 
+• Device type, operating system, and browser type 
+• IP address and general geographic location 
+• App usage metrics, crash logs, and performance data 
+2. How We Use Your Information 
+We use the collected information to: 
+• Provide, operate, and improve the Deep Horizon App and related services 
+• Enable core features such as live protection, emergency response, and real-time 
+tracking 
+• Process payments, subscriptions, and in-app transactions securely 
+• Communicate service updates, alerts, or critical safety notifications 
+
+• Personalize user experience and enhance app performance 
+• Comply with legal, safety, and regulatory obligations 
+We do not sell, rent, or trade your personal information to any third parties. 
+3. Information Sharing and Disclosure 
+We may share your information only under the following limited circumstances: 
+• With Authorized Service Partners: To deliver emergency response, protection, or 
+support services. 
+• With Payment Gateways: To securely process your transactions. 
+• With Law Enforcement or Authorities: When required by law, for safety, or in 
+emergencies. 
+• With Analytics or Cloud Providers: For performance monitoring or data storage under 
+strict confidentiality agreements. 
+All third parties handling user data are bound by data protection obligations consistent with this 
+Privacy Policy and applicable laws. 
+4. Data Retention 
+We retain personal information only for as long as necessary to: 
+• Provide services you have requested or subscribed to, 
+• Comply with legal requirements,  
+• Resolve disputes or enforce our agreements, and  
+• Assist in legal requirements or ongoing investigations. 
+Data may be securely deleted or anonymized after its retention purpose has been fulfilled. 
+5. Data Security 
+We implement industry-standard security measures to protect user data against unauthorized 
+access, alteration, disclosure, or destruction. 
+These include encryption, access control, secure servers, and periodic security audits. 
+However, no system is completely immune to breaches. By using our services, you acknowledge 
+and accept this inherent risk. 
+6. Your Rights 
+Subject to applicable laws (including the Digital Personal Data Protection Act, 2023), you 
+have the right to: 
+
+• Access and request a copy of your personal data 
+• Request correction or deletion of inaccurate or outdated information 
+• Withdraw consent for processing (where applicable) 
+• Request data portability, if supported 
+However, we reserve the right to retain data where retention is mandated by law, regulatory 
+requirements, ongoing investigations or in the interest of public safety and national security. 
+To exercise these rights, please contact us at support@deephorizon.io. 
+7. Cookies and Tracking 
+Our website may use cookies and similar technologies to enhance user experience and analyze 
+site performance. 
+You can choose to disable cookies through your browser settings; however, some website 
+features may not function properly as a result. 
+8. Children’s Privacy 
+Our services are intended for individuals aged 18 years and above. 
+We do not knowingly collect or process personal data from minors. If we become aware of any 
+such data, we will delete it promptly. 
+9. Third-Party Links 
+Our website and app may contain links to external websites or services not operated by us. 
+We are not responsible for the content, security, or privacy practices of those third-party 
+platforms. 
+10. Policy Updates 
+We may update this Privacy Policy from time to time to reflect changes in our practices, 
+technologies, or legal obligations. 
+The updated version will be posted on this page with a revised “Last Updated” date. Continued 
+use of our services after such updates constitutes acceptance of the revised policy. 
+11. Contact Us 
+If you have any questions, concerns, or complaints about this Privacy Policy or our data 
+practices, please contact: 
+Deep Horizon Security Technologies Pvt. Ltd. 
+support@deephorizon.io 
+www.deephorizon.io 
+
+ Registered Office: 1
+st
+ Floor, Ashirwad Bhavan, Near Maligaon Overbridge, Guwahati 781012, 
+Assam 
+12. Governing Law 
+This Privacy Policy and any disputes arising out of it shall be governed by and construed in 
+accordance with the laws of India, with exclusive jurisdiction vested in the courts of Guwahati, 
+Assam. 
+ 
+ 

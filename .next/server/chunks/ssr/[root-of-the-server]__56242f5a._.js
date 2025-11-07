@@ -99,7 +99,7 @@ function SubscriptionPage() {
             price: 1639,
             period: 'year',
             originalPrice: 1788,
-            savings: '₹149 (2 months free)',
+            savings: '₹149 (Save 8%)',
             description: 'Personal safety for individuals',
             features: [
                 'Personal safety tracking',
@@ -107,7 +107,7 @@ function SubscriptionPage() {
                 '5 video monitoring sessions',
                 'Location sharing',
                 '24/7 security monitoring',
-                '2 months free'
+                'Save 8%'
             ],
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$lu$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LuUser"]
         },
@@ -135,7 +135,7 @@ function SubscriptionPage() {
             price: 7139,
             period: 'year',
             originalPrice: 7788,
-            savings: '₹1,298 (2 months free)',
+            savings: '₹649 (Save 8%)',
             description: 'Complete protection for your entire family',
             features: [
                 'Up to 5 family members',
@@ -144,7 +144,7 @@ function SubscriptionPage() {
                 '5 video monitoring sessions',
                 'Location sharing',
                 '24/7 security monitoring',
-                '2 months free'
+                'Save 8%'
             ],
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$lu$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LuUsers"]
         }
@@ -460,123 +460,7 @@ function SubscriptionPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative min-h-screen flex items-center justify-center px-6",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `absolute inset-0 transition-all duration-500 ${isDarkMode ? "bg-gradient-to-br from-slate-900 via-blue-900/30 to-black" : "bg-gradient-to-br from-blue-50 via-purple-100/60 to-gray-100"}`
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/subscription/page.tsx",
-                        lineNumber: 247,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `absolute inset-0 transition-opacity duration-500 ${isDarkMode ? "opacity-20" : "opacity-10"}`,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0",
-                            style: {
-                                backgroundImage: isDarkMode ? `linear-gradient(rgba(59, 130, 246, 0.2) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(59, 130, 246, 0.2) 1px, transparent 1px)` : `linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)`,
-                                backgroundSize: "50px 50px"
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 254,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/subscription/page.tsx",
-                        lineNumber: 253,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `absolute inset-0 backdrop-blur-2xl transition-all duration-500 ${isDarkMode ? "bg-black/30" : "bg-white/20"}`
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/subscription/page.tsx",
-                        lineNumber: 267,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `relative z-10 text-center max-w-4xl transition-all duration-2000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mb-8",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-6xl md:text-8xl font-thin tracking-tighter mb-6 leading-none",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: `block bg-gradient-to-r bg-clip-text text-transparent animate-pulse ${isDarkMode ? "from-white via-blue-100 to-white" : "from-gray-900 via-blue-600 to-gray-900"}`,
-                                                children: "PROTECT"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 276,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: `block text-5xl md:text-7xl font-extralight -mt-4 ${isDarkMode ? "text-blue-400/80" : "text-blue-600/80"}`,
-                                                children: "YOUR FAMILY"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 283,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 275,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `w-24 h-px bg-gradient-to-r from-transparent to-transparent mx-auto mb-8 animate-pulse ${isDarkMode ? "via-blue-400" : "via-blue-600"}`
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 289,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 274,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: `text-xl md:text-2xl font-light mb-12 leading-relaxed max-w-2xl mx-auto ${isDarkMode ? "text-gray-300" : "text-gray-700"}`,
-                                children: [
-                                    "Choose the plan that keeps your loved ones safe.",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 298,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: isDarkMode ? "text-blue-400" : "text-blue-600",
-                                        children: "Complete protection for the whole family."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 299,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 294,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/subscription/page.tsx",
-                        lineNumber: 271,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/subscription/page.tsx",
-                lineNumber: 246,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative z-10 py-32 px-6 mt-16",
+                className: "relative z-10 py-16 px-6 pt-24",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-6xl mx-auto",
                     children: [
@@ -592,13 +476,13 @@ function SubscriptionPage() {
                                             children: "PROTECTION"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 311,
+                                            lineNumber: 250,
                                             columnNumber: 27
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 310,
+                                    lineNumber: 249,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -606,29 +490,55 @@ function SubscriptionPage() {
                                     children: "Choose from individual or family plans. Start with our most popular family plan and experience the future of personal security"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 313,
+                                    lineNumber: 252,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-sm text-gray-500 mt-4",
+                                    className: "flex items-center justify-center gap-4 mt-12 mb-8",
                                     children: [
-                                        plans.length,
-                                        " plans available"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>setIsAnnual(false),
+                                            className: `relative px-6 py-3 rounded-2xl font-medium transition-all duration-300 ${!isAnnual ? isDarkMode ? "bg-blue-500/30 text-blue-400 border-2 border-blue-400/50" : "bg-blue-600/30 text-blue-600 border-2 border-blue-600/50" : isDarkMode ? "bg-white/5 text-gray-400 border-2 border-white/10 hover:bg-white/10" : "bg-white/20 text-gray-600 border-2 border-gray-300/30 hover:bg-white/30"}`,
+                                            children: "Monthly"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/subscription/page.tsx",
+                                            lineNumber: 260,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>setIsAnnual(true),
+                                            className: `relative px-6 py-3 rounded-2xl font-medium transition-all duration-300 ${isAnnual ? isDarkMode ? "bg-blue-500/30 text-blue-400 border-2 border-blue-400/50" : "bg-blue-600/30 text-blue-600 border-2 border-blue-600/50" : isDarkMode ? "bg-white/5 text-gray-400 border-2 border-white/10 hover:bg-white/10" : "bg-white/20 text-gray-600 border-2 border-gray-300/30 hover:bg-white/30"}`,
+                                            children: [
+                                                "Yearly",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: `absolute -top-2 -right-2 px-2 py-0.5 text-xs font-bold rounded-full ${isDarkMode ? "bg-green-500 text-white" : "bg-green-600 text-white"}`,
+                                                    children: "8% OFF"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/subscription/page.tsx",
+                                                    lineNumber: 287,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/subscription/page.tsx",
+                                            lineNumber: 274,
+                                            columnNumber: 15
+                                        }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 318,
+                                    lineNumber: 259,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 309,
+                            lineNumber: 248,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8",
-                            children: plans.map((plan, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: plans.filter((plan)=>plan.period === (isAnnual ? 'year' : 'month')).map((plan, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: `group relative flex flex-col h-full min-h-[600px] rounded-3xl transition-all duration-500 cursor-pointer overflow-hidden backdrop-blur-xl border ${isDarkMode ? "bg-white/5 hover:bg-white/10 border-blue-400/20 shadow-2xl shadow-blue-900/40" : "bg-white/20 hover:bg-white/30 border-blue-600/10 shadow-2xl shadow-blue-200/30"}`,
                                     style: {
                                         animationDelay: `${index * 100}ms`
@@ -648,12 +558,12 @@ function SubscriptionPage() {
                                                                     size: 48
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                                    lineNumber: 344,
+                                                                    lineNumber: 317,
                                                                     columnNumber: 39
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 341,
+                                                                lineNumber: 314,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -661,7 +571,7 @@ function SubscriptionPage() {
                                                                 children: plan.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 346,
+                                                                lineNumber: 319,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -669,13 +579,13 @@ function SubscriptionPage() {
                                                                 children: plan.description
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 347,
+                                                                lineNumber: 320,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                        lineNumber: 340,
+                                                        lineNumber: 313,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -689,7 +599,7 @@ function SubscriptionPage() {
                                                                         children: "₹"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                                        lineNumber: 357,
+                                                                        lineNumber: 330,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -697,7 +607,7 @@ function SubscriptionPage() {
                                                                         children: plan.price
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                                        lineNumber: 358,
+                                                                        lineNumber: 331,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -708,13 +618,13 @@ function SubscriptionPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                                        lineNumber: 359,
+                                                                        lineNumber: 332,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 356,
+                                                                lineNumber: 329,
                                                                 columnNumber: 23
                                                             }, this),
                                                             plan.period === 'year' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -726,7 +636,7 @@ function SubscriptionPage() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 362,
+                                                                lineNumber: 335,
                                                                 columnNumber: 25
                                                             }, this),
                                                             plan.originalPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -740,7 +650,7 @@ function SubscriptionPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                                        lineNumber: 368,
+                                                                        lineNumber: 341,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -748,25 +658,25 @@ function SubscriptionPage() {
                                                                         children: plan.savings
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                                        lineNumber: 373,
+                                                                        lineNumber: 346,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 367,
+                                                                lineNumber: 340,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                        lineNumber: 355,
+                                                        lineNumber: 328,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 338,
+                                                lineNumber: 311,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -782,12 +692,12 @@ function SubscriptionPage() {
                                                                         size: 10
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                                        lineNumber: 391,
+                                                                        lineNumber: 364,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                                    lineNumber: 388,
+                                                                    lineNumber: 361,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -795,23 +705,23 @@ function SubscriptionPage() {
                                                                     children: feature
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                                    lineNumber: 393,
+                                                                    lineNumber: 366,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, featureIndex, true, {
                                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                                            lineNumber: 387,
+                                                            lineNumber: 360,
                                                             columnNumber: 25
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                    lineNumber: 385,
+                                                    lineNumber: 358,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 384,
+                                                lineNumber: 357,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -826,50 +736,50 @@ function SubscriptionPage() {
                                                                 className: "transform group-hover:translate-x-1 transition-transform duration-300"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                                lineNumber: 412,
+                                                                lineNumber: 385,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                                        lineNumber: 410,
+                                                        lineNumber: 383,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                    lineNumber: 405,
+                                                    lineNumber: 378,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 404,
+                                                lineNumber: 377,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 336,
+                                        lineNumber: 309,
                                         columnNumber: 17
                                     }, this)
                                 }, plan.id, false, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 326,
+                                    lineNumber: 299,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 324,
+                            lineNumber: 297,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/subscription/page.tsx",
-                    lineNumber: 308,
+                    lineNumber: 247,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/subscription/page.tsx",
-                lineNumber: 307,
+                lineNumber: 246,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -889,13 +799,13 @@ function SubscriptionPage() {
                                             children: "DEEP HORIZON"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 430,
+                                            lineNumber: 403,
                                             columnNumber: 26
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 429,
+                                    lineNumber: 402,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -903,13 +813,13 @@ function SubscriptionPage() {
                                     children: "Experience the difference that advanced technology and human care can make in your family's safety"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 432,
+                                    lineNumber: 405,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 428,
+                            lineNumber: 401,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -926,12 +836,12 @@ function SubscriptionPage() {
                                                 size: 40
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 453,
+                                                lineNumber: 426,
                                                 columnNumber: 36
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 450,
+                                            lineNumber: 423,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -939,7 +849,7 @@ function SubscriptionPage() {
                                             children: benefit.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 455,
+                                            lineNumber: 428,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -947,29 +857,29 @@ function SubscriptionPage() {
                                             children: benefit.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 460,
+                                            lineNumber: 433,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, benefit.title, true, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 441,
+                                    lineNumber: 414,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 439,
+                            lineNumber: 412,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/subscription/page.tsx",
-                    lineNumber: 427,
+                    lineNumber: 400,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/subscription/page.tsx",
-                lineNumber: 424,
+                lineNumber: 397,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -989,13 +899,13 @@ function SubscriptionPage() {
                                             children: "FAMILIES"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 476,
+                                            lineNumber: 449,
                                             columnNumber: 26
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 475,
+                                    lineNumber: 448,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1003,13 +913,13 @@ function SubscriptionPage() {
                                     children: "See what our users say about their experience with Deep Horizon"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 478,
+                                    lineNumber: 451,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 474,
+                            lineNumber: 447,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1029,12 +939,12 @@ function SubscriptionPage() {
                                                     fill: "currentColor"
                                                 }, i, false, {
                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                    lineNumber: 498,
+                                                    lineNumber: 471,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 496,
+                                            lineNumber: 469,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1046,7 +956,7 @@ function SubscriptionPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 507,
+                                            lineNumber: 480,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1056,7 +966,7 @@ function SubscriptionPage() {
                                                     children: testimonial.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                    lineNumber: 513,
+                                                    lineNumber: 486,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1064,35 +974,35 @@ function SubscriptionPage() {
                                                     children: testimonial.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                    lineNumber: 518,
+                                                    lineNumber: 491,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 512,
+                                            lineNumber: 485,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, testimonial.name, true, {
                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                    lineNumber: 487,
+                                    lineNumber: 460,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/subscription/page.tsx",
-                            lineNumber: 485,
+                            lineNumber: 458,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/subscription/page.tsx",
-                    lineNumber: 473,
+                    lineNumber: 446,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/subscription/page.tsx",
-                lineNumber: 472,
+                lineNumber: 445,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1111,13 +1021,13 @@ function SubscriptionPage() {
                                         children: "PROTECT YOUR FAMILY"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 539,
+                                        lineNumber: 512,
                                         columnNumber: 24
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 538,
+                                lineNumber: 511,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1125,7 +1035,7 @@ function SubscriptionPage() {
                                 children: "Join thousands of families who trust Deep Horizon for their safety. Start your protection today."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 541,
+                                lineNumber: 514,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1141,18 +1051,18 @@ function SubscriptionPage() {
                                                     className: "transform group-hover:translate-x-1 transition-transform duration-300"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/subscription/page.tsx",
-                                                    lineNumber: 554,
+                                                    lineNumber: 527,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/subscription/page.tsx",
-                                            lineNumber: 552,
+                                            lineNumber: 525,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 547,
+                                        lineNumber: 520,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1161,29 +1071,29 @@ function SubscriptionPage() {
                                         children: "Learn More"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 557,
+                                        lineNumber: 530,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 546,
+                                lineNumber: 519,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/subscription/page.tsx",
-                        lineNumber: 533,
+                        lineNumber: 506,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/subscription/page.tsx",
-                    lineNumber: 532,
+                    lineNumber: 505,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/subscription/page.tsx",
-                lineNumber: 531,
+                lineNumber: 504,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -1206,13 +1116,13 @@ function SubscriptionPage() {
                                                 children: "HORIZON"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 581,
+                                                lineNumber: 554,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 579,
+                                        lineNumber: 552,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1220,13 +1130,13 @@ function SubscriptionPage() {
                                         children: "Personal Security Concierge"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 585,
+                                        lineNumber: 558,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 578,
+                                lineNumber: 551,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1235,7 +1145,7 @@ function SubscriptionPage() {
                                     "Contact us at - Deep Horizon, Ashirwad Bhavan, Maligaon, Guwahati 781012, Assam",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 592,
+                                        lineNumber: 565,
                                         columnNumber: 94
                                     }, this),
                                     "Phone: ",
@@ -1245,7 +1155,7 @@ function SubscriptionPage() {
                                         children: "+91 8638071503"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 593,
+                                        lineNumber: 566,
                                         columnNumber: 22
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1257,7 +1167,7 @@ function SubscriptionPage() {
                                                 children: "Privacy Policy"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 595,
+                                                lineNumber: 568,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1266,35 +1176,44 @@ function SubscriptionPage() {
                                                 children: "Terms of Service"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                                lineNumber: 596,
+                                                lineNumber: 569,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "/refund-policy",
+                                                className: isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600",
+                                                children: "Refund Policy"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 570,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/subscription/page.tsx",
-                                        lineNumber: 594,
+                                        lineNumber: 567,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/subscription/page.tsx",
-                                lineNumber: 591,
+                                lineNumber: 564,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/subscription/page.tsx",
-                        lineNumber: 577,
+                        lineNumber: 550,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/subscription/page.tsx",
-                    lineNumber: 576,
+                    lineNumber: 549,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/subscription/page.tsx",
-                lineNumber: 573,
+                lineNumber: 546,
                 columnNumber: 7
             }, this)
         ]
