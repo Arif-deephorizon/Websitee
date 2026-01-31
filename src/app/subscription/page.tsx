@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { LuShieldCheck, LuUsers, LuUser, LuCheck, LuStar, LuArrowRight, LuHeart, LuZap, LuGlobe, LuLock, LuSmartphone, LuHeadphones, LuMapPin } from "react-icons/lu";
+import { FaApple, FaGooglePlay } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function SubscriptionPage() {
@@ -547,7 +548,7 @@ export default function SubscriptionPage() {
         isDarkMode ? "border-gray-800" : "border-gray-300"
       }`}>
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-10">
             <div className="mb-8 md:mb-0">
               <h3 className="text-2xl font-thin tracking-wider">
                 DEEP{" "}
@@ -561,6 +562,43 @@ export default function SubscriptionPage() {
                 Personal Security Concierge
               </p>
             </div>
+
+            <div className="flex flex-col items-center md:items-start gap-4">
+              <h4 className={`text-sm font-medium tracking-wide ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
+                Get the app
+              </h4>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.deephorizon.security&hl=en_IN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`px-4 py-2 text-sm font-light transition-all duration-300 rounded-2xl backdrop-blur-xl border shadow-2xl flex items-center gap-2 ${
+                    isDarkMode
+                      ? "bg-white/5 hover:bg-white/10 border-blue-400/20 shadow-blue-900/40 text-gray-300 hover:text-white"
+                      : "bg-white/20 hover:bg-white/30 border-blue-600/10 shadow-blue-200/30 text-gray-700 hover:text-black"
+                  } focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-offset-2 ${isDarkMode ? "focus:ring-offset-black" : "focus:ring-offset-white"}`}
+                  aria-label="Download Deep Horizon Security on Google Play"
+                >
+                  <FaGooglePlay className={isDarkMode ? "text-blue-400" : "text-blue-600"} />
+                  Google Play
+                </a>
+                <a
+                  href="https://apps.apple.com/in/app/deep-horizon-security/id6755099422"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`px-4 py-2 text-sm font-light transition-all duration-300 rounded-2xl backdrop-blur-xl border shadow-2xl flex items-center gap-2 ${
+                    isDarkMode
+                      ? "bg-white/5 hover:bg-white/10 border-blue-400/20 shadow-blue-900/40 text-gray-300 hover:text-white"
+                      : "bg-white/20 hover:bg-white/30 border-blue-600/10 shadow-blue-200/30 text-gray-700 hover:text-black"
+                  } focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-offset-2 ${isDarkMode ? "focus:ring-offset-black" : "focus:ring-offset-white"}`}
+                  aria-label="Download Deep Horizon Security on the App Store"
+                >
+                  <FaApple className={isDarkMode ? "text-blue-400" : "text-blue-600"} />
+                  App Store
+                </a>
+              </div>
+            </div>
+
             <div className={`text-sm font-light mt-4 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
               Contact us at - Deep Horizon, Ashirwad Bhavan, Maligaon, Guwahati 781012, Assam<br />
               Phone: <a href="tel:+918638071503" className={isDarkMode ? "hover:text-blue-400" : "hover:text-blue-600"}>+91 8638071503</a>
